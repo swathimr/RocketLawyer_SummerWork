@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+	<name>KPI Sprint Productivity Daily Import</name>
+	<jobentry>
+		<filename>kpi_Prod_Snapshot.xml</filename>
+		<type>CALL_SCRIPT</type>
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<type>UPDATE_SYNC_DATE</type>
+		<value>tm_prod_snapshot</value>		
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+</job>

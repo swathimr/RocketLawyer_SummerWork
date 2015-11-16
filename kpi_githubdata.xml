@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+    <name>KPI Github Data Daily Import</name>
+    <type>CALL_SCRIPT</type>
+    <script_name>GitHub_Update.py</script_name>
+    <script_dir>/opt/warehouse/hive-etl/jobs/technology_metrics</script_dir> 
+   <sync_date_name>tm_github</sync_date_name>
+</transformation>

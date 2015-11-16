@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+    <name>KPI Sprint Productivity Snapshot Daily Import</name>
+    <type>CALL_SCRIPT</type>
+    <script_name>Productivity_Snapshot.py</script_name>
+    <script_dir>/opt/warehouse/hive-etl/jobs/technology_metrics</script_dir> 
+   <sync_date_name>tm_prod_snapshot</sync_date_name>
+</transformation>

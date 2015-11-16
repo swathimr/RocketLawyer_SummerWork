@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+    <name>KPI BugIntroduction Daily Import</name>
+    <type>CALL_SCRIPT</type>
+    <script_name>BugIntro_Update.py</script_name>
+    <script_dir>/opt/warehouse/hive-etl/jobs/technology_metrics</script_dir> 
+   <sync_date_name>tm_bug_introduction</sync_date_name>
+</transformation>

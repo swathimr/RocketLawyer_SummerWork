@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+	<name>KPI Daily Import</name>
+	<jobentry>
+		<filename>kpi_productivity.xml</filename>
+		<type>CALL_SCRIPT</type>
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<type>UPDATE_SYNC_DATE</type>
+		<value>tm_productivity</value>		
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<filename>kpi_bugintroduction.xml</filename>
+		<type>CALL_SCRIPT</type>
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<type>UPDATE_SYNC_DATE</type>
+		<value>tm_bug_introduction</value>		
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<filename>kpi_incidents.xml</filename>
+		<type>CALL_SCRIPT</type>
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<type>UPDATE_SYNC_DATE</type>
+		<value>tm_pagerduty</value>		
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<filename>kpi_codecoverage.xml</filename>
+		<type>CALL_SCRIPT</type>
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<type>UPDATE_SYNC_DATE</type>
+		<value>tm_code_coverage</value>		
+		<stop_on_fail>true</stop_on_fail>
+	</jobentry>
+    <jobentry>
+		<filename>kpi_githubdata.xml</filename>
+		<type>CALL_SCRIPT</type>
+		<stop_on_fail>false</stop_on_fail>
+	</jobentry>
+	<jobentry>
+		<type>UPDATE_SYNC_DATE</type>
+		<value>tm_github</value>		
+		<stop_on_fail>false</stop_on_fail>
+	</jobentry>
+</job>
